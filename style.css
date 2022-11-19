@@ -167,8 +167,9 @@ body {
 .mini-box {
   text-align: center;
   border: solid rgb(233, 229, 229) 1px;
-  width: 200px;
-  overflow-x: none;
+  min-width: 250px;
+  overflow-x: hidden;
+  margin-bottom: 20px;
 }
 .mini-box.premium{
     box-shadow: 5px 5px 10px  #929394 ;
@@ -271,27 +272,31 @@ button {
     padding-right: 10px;
 }
 @media only screen and (max-width:450px){
-    .bottom-mini-box {
-        border: solid rgb(233, 229, 229) 2px;
-        display: flex;
-        flex-direction: column;
-        padding: none;
-      }
 
   }
   @media only screen and (max-width:1200px){
     .tele {
         max-width: 450px;
-          
       }
   }
-  @media only screen and (max-width:600px){
+  @media only screen and (max-width:450px){
 
     .tele {
-        max-width: 450px;
+      margin: 0px;
+      max-width: 300px;
        padding-left: none;   
       }
+  
+  .header-main{
+    padding: 0px 10px;
   }
+  .bottom-mini-box {
+    border: solid rgb(233, 229, 229) 2px;
+    display: flex;
+    flex-direction: column;
+    padding: none;
+  }
+}
     @media only screen and (max-width:750px){
         .end{
             display: flex;
@@ -313,4 +318,8 @@ button {
             color: #FFFFFF;
             text-align: center;
         }
+        .subs{
+          padding: 20px;
+        }
+        
     }
